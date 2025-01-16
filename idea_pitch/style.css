@@ -8,10 +8,15 @@ body {
     line-height: 1.6;
 }
 
-.header h1{
+header h1{
     font-weight:bolder;
-    font-family: "Space mono";
+    font-family: "Share Tech Mono";
 }
+
+header h1 span {
+    color: rgb(0, 255, 166);
+    font-size: 3.5rem; 
+  }
 
 /* Container */
 .container {
@@ -20,7 +25,7 @@ body {
     padding: 40px 20px;
 }
 
-/* Idea Cards */
+
 .card {
     background: linear-gradient(135deg, #1e1e1e, #333333);
     border: none;
@@ -205,3 +210,7 @@ input:focus, select:focus, textarea:focus {
     box-shadow: 0 0 8px rgba(0, 255, 166, 0.4);
 }
 
+
+#add-idea-btn{
+text-decoration: none;
+}

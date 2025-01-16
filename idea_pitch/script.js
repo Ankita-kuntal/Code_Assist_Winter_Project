@@ -85,7 +85,7 @@ function addIdeaToPage(idea, index) {
   const ideaCard = `
     <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
       <div class="card shadow-sm w-100" style="border: none; border-radius: 8px; background-color: #ffffff; position: relative;">
-        <img src="/IDEA (1).png " height="300px">
+        <img src="./IDEA (1).png " height="300px">
         <div class="card-body" style="padding: 20px;">
           <h5 class="card-title" style="font-size: 1.5rem; font-weight: 600; color: #ffffff;">${idea.title}</h5>
           <p class="card-text text-truncate" style="color: #ffffff; font-size: 1rem;">${idea.description}</p>

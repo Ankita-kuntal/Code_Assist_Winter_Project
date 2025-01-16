@@ -7,5 +7,65 @@
 body{
     background-color: black;
     color: white;
+
+}
+
+.container{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
+}
+
+.container h1{
+    font-weight: 900;
+    font-family: "Share Tech Mono";
+    border: 1px solid greenyellow;
+    padding: 10px 0px;
+    margin: 20px 0px;
+}
+
+#idea-description{
+    font-weight: 900;
+    font-family: "Share Tech Mono";
+    border: 1px solid greenyellow;
+    padding: 10px 0px;
+    margin: 10px 0px;
+}
+
+.mt-4{
+    display: flex;
+}
+
+#comment-box{
+    width: 500px;
+}
+
+#add-comment-btn{
+    margin: 0px 10px;
+    height: 60px;
+}
+
+.button-mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comments{
+    width: 100vw;
+    display: flex;
+    justify-content:center ;
+
+
+    
+    
+    
+
+}
+
+.comments ul{
+    width: 1000px;
+    margin: 10px 0px;
 }

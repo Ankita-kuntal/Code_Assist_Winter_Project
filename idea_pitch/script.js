@@ -91,7 +91,7 @@ function addIdeaToPage(idea, index) {
           <p class="card-text text-truncate" style="color: #ffffff; font-size: 1rem;">${idea.description}</p>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
-              <button class="btn btn-sm view-details-btn" data-index="${index}" style="padding: 5px 15px; background: none; border: none; color: #007bff;">
+              <button class="btn btn-sm view-details-btn" data-index="${index}" style="padding: 5px 15px; background: none; border: none; color:#ffffff;">
                 <a href="idea-details.html?id=${index}" class="text-decoration-none">View</a>
               </button>
               <button class="btn btn-sm delete-btn" data-index="${index}" style="padding: 5px 15px; background: none; border: none; color: #dc3545;">

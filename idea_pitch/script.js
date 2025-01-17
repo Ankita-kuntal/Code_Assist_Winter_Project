@@ -88,10 +88,10 @@ function addIdeaToPage(idea, index) {
         <img src="./IDEA (1).png " height="300px">
         <div class="card-body" style="padding: 20px;">
           <h5 class="card-title" style="font-size: 1.5rem; font-weight: 600; color: #ffffff;">${idea.title}</h5>
-          <p class="card-text text-truncate" style="color: #ffffff; font-size: 1rem;">${idea.description}</p>
+          <p class="card-text text-truncate" style="color: #ffffff; font-size: 1rem; width:270px">${idea.description}</p>
           <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
-              <button class="btn btn-sm view-details-btn" data-index="${index}" style="padding: 5px 15px; background: none; border: none; color:#ffffff;">
+              <button class="btn btn-sm view-details-btn" data-index="${index}" style="padding: 5px 15px; background: none; border: none; color: #28a745;">
                 <a href="idea-details.html?id=${index}" class="text-decoration-none">View</a>
               </button>
               <button class="btn btn-sm delete-btn" data-index="${index}" style="padding: 5px 15px; background: none; border: none; color: #dc3545;">

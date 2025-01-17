@@ -17,8 +17,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const downvoteBtn = document.getElementById("downvote-btn");
 
       if (upvoteBtn && downvoteBtn) {
-        upvoteBtn.textContent = `Upvote (${idea.upvotes || 0})`;
-        downvoteBtn.textContent = `Downvote (${idea.downvotes || 0})`;
+        // Set initial upvote/downvote counts with icons
+        upvoteBtn.innerHTML = `<i class="fas fa-thumbs-up"></i> ${idea.upvotes || 0}`;
+        downvoteBtn.innerHTML = `<i class="fas fa-thumbs-down"></i> ${idea.downvotes || 0}`;
 
         const userVotes = JSON.parse(localStorage.getItem("userVotes")) || {};
 
@@ -37,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
             userVotes[ideaIndex] = "upvoted";
             localStorage.setItem("userVotes", JSON.stringify(userVotes));
 
-            upvoteBtn.textContent = `Upvote (${idea.upvotes})`;
+            upvoteBtn.innerHTML = `<i class="fas fa-thumbs-up"></i> ${idea.upvotes}`;
             upvoteBtn.disabled = true;
             downvoteBtn.disabled = true;
           }
@@ -53,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
             userVotes[ideaIndex] = "downvoted";
             localStorage.setItem("userVotes", JSON.stringify(userVotes));
 
-            downvoteBtn.textContent = `Downvote (${idea.downvotes})`;
+            downvoteBtn.innerHTML = `<i class="fas fa-thumbs-down"></i> ${idea.downvotes}`;
             upvoteBtn.disabled = true;
             downvoteBtn.disabled = true;
           }

@@ -32,6 +32,7 @@ if (addIdeaForm) {
         };
 
         // Save idea to localStorage
+        
         saveIdeaToStorage(newIdea);
 
         // Reset form
